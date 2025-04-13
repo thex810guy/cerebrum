@@ -5,7 +5,7 @@ import InlineCode from "@/font/InlineCode"
 import { Link } from "react-router"
 
 export default function NotFound() {
-    return (<div className="w-full h-182 flex items-center justify-center">
+    return (<div className="w-full h-screen flex items-center justify-center">
         <div className="flex flex-col gap-8 items-center">
             <div className="flex flex-col gap-4">
                 <H1 className="text-center">404 Not Found</H1>

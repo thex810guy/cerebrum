@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import H1 from "@/font/H1"
 import H2 from "@/font/H2"
 
@@ -16,7 +16,7 @@ function Hero() {
             <div>
                 <Button className="mb-4">Get Started</Button>
                 <br />
-                <Button variant="outline"><a href="https://www.github.com/thex810guy/cerebrum">Contribute</a></Button>
+                <a href="https://www.github.com/thex810guy/cerebrum"><Button variant="outline">Contribute</Button></a>
             </div>
         </div>
     </div>)

@@ -11,16 +11,16 @@ import H3 from "@/font/H3"
 import icon from "@/assets/cerebrum-icon.svg"
 import { cn } from "@/lib/utils"
 import React from "react"
-import { Button } from "./components/ui/button"
-import { Link } from "react-router"
+import { Button } from "./ui/button"
+import { NavLink } from "react-router"
 
 function Navbar() {
   return (<div className="w-full shadow-sm h-18 px-8 py-4">
     <div className="flex items-center justify-between w-full h-full">
-      <Link to="/" className="h-full flex items-center gap-2">
+      <NavLink to="/" className="h-full flex items-center gap-2">
         <img className="h-full" src={icon} alt="icon" />
         <H3 className="text-slate-900">Cerebrum</H3>
-      </Link>
+      </NavLink>
 
       <NavigationMenu>
         <NavigationMenuList>
@@ -56,11 +56,11 @@ function Navbar() {
           </NavigationMenuItem>
 
           <NavigationMenuItem>
-            {/* <Link href="/docs" legacyBehavior passHref> */}
-              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+            
+              <NavigationMenuLink href="https://www.github.com/thex810guy/cerebrum" className={navigationMenuTriggerStyle()}>
                 Contribute
               </NavigationMenuLink>
-            {/* </Link> */}
+            
           </NavigationMenuItem>
 
           <NavigationMenuItem>
@@ -74,8 +74,8 @@ function Navbar() {
       </NavigationMenu>
 
       <div className="h-full flex items-center gap-4">
-        <Button variant="outline">Login</Button>
-        <Button>Sign Up</Button>
+        <NavLink to="/log-in"><Button variant="outline">Login</Button></NavLink>
+        <NavLink to="/sign-up"><Button>Sign Up</Button></NavLink>
       </div>
     </div>
   </div>)
