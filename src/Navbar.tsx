@@ -12,14 +12,15 @@ import icon from "@/assets/cerebrum-icon.svg"
 import { cn } from "@/lib/utils"
 import React from "react"
 import { Button } from "./components/ui/button"
+import { Link } from "react-router"
 
 function Navbar() {
   return (<div className="w-full shadow-sm h-18 px-8 py-4">
     <div className="flex items-center justify-between w-full h-full">
-      <div className="h-full flex items-center gap-2">
+      <Link to="/" className="h-full flex items-center gap-2">
         <img className="h-full" src={icon} alt="icon" />
         <H3 className="text-slate-900">Cerebrum</H3>
-      </div>
+      </Link>
 
       <NavigationMenu>
         <NavigationMenuList>

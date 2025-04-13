@@ -16,7 +16,7 @@ function Hero() {
             <div>
                 <Button className="mb-4">Get Started</Button>
                 <br />
-                <Button variant="outline">Contribute</Button>
+                <Button variant="outline"><a href="https://www.github.com/thex810guy/cerebrum">Contribute</a></Button>
             </div>
         </div>
     </div>)

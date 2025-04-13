@@ -6,6 +6,7 @@ import Loading from './pages/Loading.tsx';
 
 const Navbar = lazy(() => import('./Navbar.tsx'));
 const Homepage = lazy(() => import('./pages/Homepage.tsx'));
+const NotFound = lazy(() => import('./pages/NotFound.tsx'));
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -17,8 +18,11 @@ createRoot(document.getElementById('root')!).render(
             <Outlet />
           </>}>
             <Route index element={<Homepage />}/>
+            <Route path="/*" element={<NotFound />}/>
           </Route>
         </Routes>
+
+        
       </BrowserRouter>
     </Suspense>
   </StrictMode>,
